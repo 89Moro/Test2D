@@ -14,8 +14,9 @@ class Draw2D : UIView
     {
         print("Max height: \(rect.size.height)")
         print("Max width: \(rect.size.width)")
-        let context = UIGraphicsGetCurrentContext()
         
+        let context = UIGraphicsGetCurrentContext()
+        /*
         context?.setLineWidth(2.0)
         context?.setStrokeColor(UIColor.red.cgColor)
         
@@ -43,13 +44,28 @@ class Draw2D : UIView
         
         context?.addArc(tangent1End: CGPoint(x:350, y:350), tangent2End: CGPoint(x: 350, y: 500), radius: CGFloat(100))
         
-        /*
+        
         context?.move(to: CGPoint(x:150,y:150))
         context?.setStrokeColor(UIColor.blue.cgColor)
         context?.addRect(CGRect(x: 150,y:150, width: 50, height: 100))
         context?.addEllipse(in: CGRect(x: 150,y:150, width: 50, height: 100))
         */
         context?.strokePath()
+        
+        let locations: [CGFloat] = [0.0,0.25,0.5,0.75]
+        
+        let colors = [UIColor.red.cgColor,UIColor.green.cgColor,UIColor.blue.cgColor,UIColor.yellow.cgColor]
+        
+        let colorspace = CGColorSpaceCreateDeviceRGB()
+        
+        let gradient = CGGradient(colorsSpace: colorspace, colors: colors as CFArray, locations: locations)
+        
+        let startPoint = CGPoint(x:0,y:0)
+        let endPoint = CGPoint(x:600,y:600)
+        
+        context?.drawLinearGradient(gradient!, start: startPoint, end: endPoint, options: .drawsAfterEndLocation)
+        
+
         
         
     }
