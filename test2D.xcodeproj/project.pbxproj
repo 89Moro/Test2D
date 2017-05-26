@@ -14,6 +14,7 @@
 		4D8067A71ED8779700AEDF50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8067A51ED8779700AEDF50 /* LaunchScreen.storyboard */; };
 		4D8067B21ED8779700AEDF50 /* test2DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8067B11ED8779700AEDF50 /* test2DTests.swift */; };
 		4D8067BD1ED8779700AEDF50 /* test2DUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8067BC1ED8779700AEDF50 /* test2DUITests.swift */; };
+		4D8067CB1ED878C400AEDF50 /* Draw2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8067CA1ED878C400AEDF50 /* Draw2D.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4D8067B81ED8779700AEDF50 /* test2DUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test2DUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8067BC1ED8779700AEDF50 /* test2DUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2DUITests.swift; sourceTree = "<group>"; };
 		4D8067BE1ED8779700AEDF50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D8067CA1ED878C400AEDF50 /* Draw2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Draw2D.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				4D80679C1ED8779700AEDF50 /* AppDelegate.swift */,
 				4D80679E1ED8779700AEDF50 /* ViewController.swift */,
+				4D8067CA1ED878C400AEDF50 /* Draw2D.swift */,
 				4D8067A01ED8779700AEDF50 /* Main.storyboard */,
 				4D8067A31ED8779700AEDF50 /* Assets.xcassets */,
 				4D8067A51ED8779700AEDF50 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				4D80679F1ED8779700AEDF50 /* ViewController.swift in Sources */,
 				4D80679D1ED8779700AEDF50 /* AppDelegate.swift in Sources */,
+				4D8067CB1ED878C400AEDF50 /* Draw2D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
